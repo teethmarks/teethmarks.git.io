@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Monk's Cafe</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+   <link href="style.css" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+</head>
+<body>
+
+	<!-- title -->
+	<div class="container-fluid title">
+		<div class="row">
+			<h1>Monk's Cafe</h1>
+			<h5>"The Coffee Shop"</h5>	
+		</div>
+	</div>
+		<!-- /title -->
+
+	<!-- hero image -->
+	<div class="container-fluid hero">
+		<div class="row"></div>
+	</div>
+	<!-- /hero image -->
+	
+	<!-- reservation -->
+	<div class="container reservation">
+
+		<h1>Reservations</h1>
+
+		<div class="row">
+			
+			<!-- make reservation -->
+			<div class="col col-md-6 col-xs-12">
+				<div class="box make-reservation">
+					<h4>Make a Reservation</h4>
+					<div class="row">
+						<div class="col col-xs-2 text">Name</div>
+						<div class="col col-xs-10 field"><input type="text" class="form-control"></div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-2 text">Day</div>
+						<div class="col col-xs-10 field"><input type="text" class="form-control"></div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-2 text">&nbsp;</div>
+						<div class="col col-xs-10 field"><a href="#" class="btn btn-primary btn-md">Confirm</a></div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- /make reservation -->
+			
+			<!-- existing reservations -->
+			<div class="col col-md-6 col-xs-12">
+				<div class="box existing">
+					<h4>Existing Reservations</h4>
+					<table class="table">
+						<thead>
+							<tr>
+							<th>Name</th>
+							<th>Day</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<td>Freddy</td>
+							<td>20 Dec 2016</td>
+							</tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							</tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /existing reservation -->
+
+		</div>
+	</div>
+	<!-- /reservation -->
+
+	<!-- map -->
+	<div class="container map">
+		<div class="row">
+			<h1>Come dine with us</h1>
+			<div id="map"></div>
+		</div>
+	</div>
+	<!-- /map -->
+
+	<!-- reviews -->
+	<div class="container reviews">
+
+		<h1>Customer Reviews</h1>
+
+		<div class="row">
+			<div class="col col-md-5 col-xs-12 customer-photo">
+					<img src="images/customer.jpg">
+			</div>
+			<div class="col col-md-7 col-xs-12 customer-review">
+				<div class="text">
+				"Big lettuce, big carrots, tomatoes like volleyballs."</span>
+				<span>- Geri Seinfeld, on The BIG Salad</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /reviews -->
+
+	<!-- footer -->
+	<footer class="container-fluid">
+	Copyright © Monk's Cafe
+	</footer>
+	<!-- /footer -->
+
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDslUPcaQq9UU-K0rzV3ARSkbmOa8T2rlk&callback=initMap"></script>
+</body>
+</html>
