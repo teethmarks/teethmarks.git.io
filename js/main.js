@@ -66,12 +66,7 @@
 
     // PART FOUR: TRIGGER PART THREE //
     getReservations();
-
-    // DATEPICKER //
-    $(".reservation-date").datepicker({
-        dateFormat: 'd MM, y'
-    });
-
+    
 
 // Google Map
 function initMap() {
