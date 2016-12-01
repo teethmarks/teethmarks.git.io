@@ -69,12 +69,9 @@
     
 
     // DATEPICKER //
-    function datePicker (){
-        $(".reservation-date").datepicker({
+    $(".reservation-date").datepicker({
         dateFormat: 'd MM, y'
-        });
-    }
-    datePicker();
+    });
 
 // Google Map
 function initMap() {
