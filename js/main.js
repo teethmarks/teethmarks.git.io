@@ -68,6 +68,14 @@
     getReservations();
     
 
+    // DATEPICKER //
+    function datePicker (){
+        $(".reservation-date").datepicker({
+        dateFormat: 'd MM, y'
+        });
+    }
+    datePicker();
+
 // Google Map
 function initMap() {
     var monks = {
