@@ -56,6 +56,11 @@ h1{
 	margin-bottom:20px;
 }
 
+.iframe{
+	overflow-y:scroll;
+	height:140px;
+}
+
 .reservation .box .row{
 	margin-bottom:10px;
 }
