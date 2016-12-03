@@ -66,12 +66,39 @@
 
     // PART FOUR: TRIGGER PART THREE //
     getReservations();
+
+
+// Delete Reservation
+$('.reservations').on('click', '.delete', function(e){
+
+    var id = $(e.target).parent().data('id'); // Get the ID for the reservation we want to update
+    var reservationRef = database.ref('reservations/' + id); // Find comment whose objectId is equal to the id we're searching with
+    reservationRef.remove(); // Remove it!
+});
     
 
-    // DATEPICKER //
-    $(".reservation-date").datepicker({
-        dateFormat: 'd MM, y'
-    });
+// Datepicker
+$(".reservation-date").datepicker({
+    dateFormat: 'd MM, y'
+});
+
+// Google Places
+$.ajax({
+    type: 'GET',
+    url: 'https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyDR-HuYChLRYxteTk0oAMZ0zMSwss3pBy4',
+    success: function (response) {
+        $('.results').html('hi');
+    },
+    error: function (response) {
+        $('.results').html('we dont know if its open now haha!');
+    },
+    beforeSend: function() {
+        $('.status').text('Fetching your results..');
+    },
+    complete: function() {
+        $('.status').remove();
+    }
+});
 
 // Google Map
 function initMap() {
@@ -88,3 +115,4 @@ function initMap() {
         map: map
     });
 }
+

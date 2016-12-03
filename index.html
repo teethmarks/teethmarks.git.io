@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" type="text/css" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" >
    <link href="style.css" type="text/css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
@@ -85,6 +86,8 @@
 						<tr data-id="{{reservationId}}">
 						<td>{{name}}</td>
 						<td>{{date}}</td>
+						<td class="fa fa-trash-o delete" aria-hidden="true"></td>
+						<!-- <td><i class="fa fa-trash-o delete" aria-hidden="true"></i></td> -->
 						</tr>
 					</script>
 					<!-- /Print results using handlebars -->
@@ -101,6 +104,10 @@
 		<div class="row">
 			<h1>Come dine with us</h1>
 			<div id="map"></div>
+			<div class="hours">
+				<div class="results"></div>
+				<div class="status"></div>
+			</div>
 		</div>
 	</div>
 	<!-- /map -->

@@ -126,3 +126,14 @@ footer{
 	color:#fff;
 	padding:1%;
 }
+
+.delete{
+	cursor:pointer;
+}
+
+.hours{
+	background-color:#eee;
+	padding:3%;
+	text-align: center;
+	display:block;
+}
