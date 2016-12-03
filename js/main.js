@@ -85,7 +85,7 @@ $(".reservation-date").datepicker({
 // Google Places
 $.ajax({
     type: 'GET',
-    url: 'https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyDR-HuYChLRYxteTk0oAMZ0zMSwss3pBy4',
+    url: 'https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJo8Mj5DrGxokRzOysJp3HPrw&key=AIzaSyDR-HuYChLRYxteTk0oAMZ0zMSwss3pBy4',
     success: function (response) {
         $('.results').html('hi');
     },

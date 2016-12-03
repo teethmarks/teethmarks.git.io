@@ -85,7 +85,6 @@ h1{
 
 #map{
 	height:400px;
-	margin-bottom:10px;
 }
 
 .reviews{
@@ -136,4 +135,5 @@ footer{
 	padding:3%;
 	text-align: center;
 	display:block;
+	margin-bottom:10px;
 }
