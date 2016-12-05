@@ -87,16 +87,16 @@ $.ajax({
     type: 'GET',
     url: 'https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJo8Mj5DrGxokRzOysJp3HPrw&key=AIzaSyDR-HuYChLRYxteTk0oAMZ0zMSwss3pBy4',
     success: function (response) {
-        $('.results').html('hi');
+        $('.results').html('response.result.open_now');
     },
     error: function (response) {
-        $('.results').html('we dont know if its open now haha!');
+        $('.results').html('Unable to load Google Places');
     },
     beforeSend: function() {
-        $('.status').text('Fetching your results..');
+        $('.hours').text('Fetching your results..');
     },
     complete: function() {
-        $('.status').remove();
+        $('.hours').remove();
     }
 });
 
